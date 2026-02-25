@@ -15,7 +15,7 @@ export default function Home() {
         {/* Avatar */}
         <div className="mb-12 flex justify-center">
           <img
-            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect fill='%23fbbf24' width='200' height='200'/%3E%3Ccircle cx='100' cy='70' r='35' fill='%23000'/%3E%3Crect x='70' y='120' width='60' height='50' fill='%238b6914'/%3E%3Crect x='60' y='100' width='80' height='30' fill='%23d4a574'/%3E%3C/svg%3E"
+            src="https://avatars.githubusercontent.com/u/0xh3rman?v=4"
             alt="Ferman's Avatar"
             className="w-32 h-32 rounded-full border-2 border-cyan-400 shadow-lg"
           />
