@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferman | Profile</title>
+    <style>
+        :root {
+            --bg-color: #000000;
+            --text-color: #ffffff;
+            --accent-color: #22d3ee;
+            --muted-text: #9ca3af;
+            --border-color: #374151;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem 1rem;
+            line-height: 1.5;
+        }
+
+        main {
+            max-width: 42rem;
+            width: 100%;
+        }
+
+        .avatar-container {
+            margin-bottom: 3rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        .avatar {
+            width: 8rem;
+            height: 8rem;
+            border-radius: 9999px;
+            border: 2px solid var(--accent-color);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            object-fit: cover;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.025em;
+        }
+
+        .username {
+            text-align: center;
+            color: var(--muted-text);
+            margin-bottom: 2rem;
+            font-size: 1.125rem;
+        }
+
+        .divider {
+            border-top: 1px solid var(--border-color);
+            margin: 2rem 0;
+        }
+
+        .bio {
+            text-align: center;
+            color: #d1d5db;
+            margin-bottom: 3rem;
+            line-height: 1.625;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .link-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            color: #d1d5db;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .link-item:hover {
+            color: var(--accent-color);
+        }
+
+        .link-item svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        .link-item:hover span {
+            text-decoration: underline;
+            text-underline-offset: 4px;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            text-align: center;
+            font-size: 0.875rem;
+        }
+
+        .stat-value {
+            color: var(--accent-color);
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .stat-label {
+            color: var(--muted-text);
+            margin-top: 0.25rem;
+        }
+
+        @media (max-width: 640px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="avatar-container">
+            <img src="https://avatars.githubusercontent.com/u/0xh3rman?v=4" alt="Ferman's Avatar" class="avatar">
+        </div>
+
+        <h1>Ferman</h1>
+        <p class="username">@0xh3rman</p>
+
+        <div class="divider"></div>
+
+        <p class="bio">
+            Blockchain developer. Building wallets and infrastructure for Web3.
+        </p>
+
+        <div class="links">
+            <a href="https://github.com/0xh3rman" target="_blank" rel="noopener noreferrer" class="link-item">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                <span>github.com/0xh3rman</span>
+            </a>
+
+            <a href="https://x.com/0xh3rman" target="_blank" rel="noopener noreferrer" class="link-item">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+                <span>x.com/0xh3rman</span>
+            </a>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="stats">
+            <div>
+                <p class="stat-value">1.1k+</p>
+                <p class="stat-label">Contributions</p>
+            </div>
+            <div>
+                <p class="stat-value">17</p>
+                <p class="stat-label">Repositories</p>
+            </div>
+            <div>
+                <p class="stat-value">138</p>
+                <p class="stat-label">Stars</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
